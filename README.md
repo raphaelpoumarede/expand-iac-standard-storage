@@ -93,6 +93,9 @@ sudo pvs
 # resize your LVM volume
 sudo lvresize -l +100%FREE /dev/data-vg01/data-lv01
 
+# re-mount the FS
+sudo mount -a
+
 # resize the filesystem itself 
 sudo resize2fs /dev/data-vg01/data-lv01
 
